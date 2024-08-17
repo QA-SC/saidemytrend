@@ -41,7 +41,7 @@ pipeline {
             }
             steps {
                 // Execute SonarQube analysis within the SonarQube environment
-                withSonarQubeEnv('Sonar-Qube-server') {
+                withSonarQubeEnv('Sonar-Qube') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
