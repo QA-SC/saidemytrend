@@ -50,7 +50,7 @@ pipeline {
         }
     }
          // Stage for publishing the JAR files to Artifactory
-        stage("Jar Publish") {
+         stage("Jar Publish") {
             steps {
                 script {
                     // Log message to indicate JAR publish start
