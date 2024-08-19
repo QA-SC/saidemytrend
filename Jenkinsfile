@@ -48,7 +48,7 @@ pipeline {
                 }
             }
         }
-    }
+    
          // Stage for publishing the JAR files to Artifactory
          stage("Jar Publish") {
             steps {
@@ -82,5 +82,4 @@ pipeline {
             }
         }
     }
-
-
+}
