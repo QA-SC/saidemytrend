@@ -26,10 +26,10 @@ pipeline {
 
         stage('SonarQube analysis') {
             environment {
-                scannerHome = tool 'Sonar-QUBE'
+                scannerHome = tool 'Sonar_QUBE_Harpal'
             }
             steps {
-                withSonarQubeEnv('Sonar-QUBE') {
+                withSonarQubeEnv('Sonar-Qube') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
