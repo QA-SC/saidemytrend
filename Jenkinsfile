@@ -29,7 +29,7 @@ pipeline {
                 scannerHome = tool 'Sonar_QUBE_Harpal'
             }
             steps {
-                withSonarQubeEnv('Sonar-Qube') {
+                withSonarQubeEnv('harpal-Sonarqube-server') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
